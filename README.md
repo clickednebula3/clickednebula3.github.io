@@ -7,8 +7,9 @@ Welcome to the Nebsite! I hope it can excite.
 ## NebNeb Minecraft Server
 ## Nebby Devlog 2024
 
+
 ## Linktree (soon?)
-# Discord Server
-# Instagram
-# Youtube
-# Webtoons
+### Discord Server
+### Instagram
+### Youtube
+### Webtoons
