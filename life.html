@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Life</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="./img/cake.jpeg">
+    </head>
+    <style>
+        body {
+            background: rgb(14, 14, 14);
+            color: rgb(204, 204, 204);
+
+            font-family: "Yeon Sung", system-ui;
+            font-weight: 400;
+            font-size: 3vw;
+            font-style: normal;
+        }
+        .holder {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin: 5vw;
+            gap: 5vw;
+        }
+        .releaser {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5vw;
+        }
+        .text {
+            width: 90%;
+            height: auto;
+            margin: 2vw;
+            text-wrap: wrap;
+            font-size: 2vw;
+        }
+        .card {
+            background-color: rgb(24, 24, 24);
+            border: 3px solid rgb(102, 102, 102);
+            color: rgb(153, 153, 153);
+            overflow: hidden;
+            border-radius: 1vw;
+            width: 100%;
+            transition: 150ms;
+        }
+        .card:hover {
+            transform: rotate(1deg) scale(1.05);
+            border: 2px solid lime;
+            color: #ffffff;
+        }
+
+        .l { transform: rotate(-7deg) translateX(9vw); }
+        .l:hover { transform: rotate(-7deg) translateX(5vw); }
+        .m { transform: rotate(1deg); }
+        .m:hover { transform: rotate(1deg) translateY(-4vw); }
+        .n { transform: rotate(-1deg); }
+        .n:hover { transform: rotate(-1deg) translateY(-10vw); }
+        .r { transform: rotate(5deg) translateX(-9vw); }
+        .r:hover { transform: rotate(5deg) translateX(-5vw); }
+
+        #back {
+            font-size: 3vw;
+        }
+    </style>
+    <script>
+        
+        var hue = 0;
+        window.onload = ()=>{
+            setInterval(function () {
+                hue += 1/80; while (hue > 1) { hue -= 1; }
+                var back = document.getElementById("back");
+                back.style.color = "hsl("+(hue*360)+", 100%, 50%)";
+            }, 100);
+        }
+
+    </script>
+    <body>
+        <div class="holder">
+            <a style="color: lime; font-size: 4vw; text-decoration: none;" href="./index">Life</a>
+            <div class="releaser">
+                <!-- <div style="display: grid; grid-template-rows: 1fr 1fr"> -->
+                    <!-- <div></div> -->
+                    <div class="card">
+                        <div class="text">
+                            I'm proud of myself for how fast I got comfortable living away from family.<br>
+                            I like to think it means I grew more independent (I still miss my family).<br><br>
+                            I was originally assigned Faisal and Wesam as my roommates, but I swiched to be Mortaza's roommate because he was the roommate of RayanJ, whom I've known from highschool.
+                        </div>
+                    </div>
+                <!-- </div> -->
+                <!-- <div style="display: grid; grid-template-rows: 3fr 1fr">
+                    <div class="card">
+                        <!-- <img src="./img/innocent.jpeg" width="100%" height="105%"> --
+                    </div>
+                    <div></div>
+                </div> -->
+                <div class="card">
+                    <div class="text">
+                        Living w Mortaza by itself is a Highlight.<br>
+                        I made him play Undertale & Deltarune, and he made play The Binding Of Issac. We regularly play Rain World together. And when we eat the (yummy) food he cooks, we (used to) watched Show called "High Potential."
+                    </div>
+                </div>
+                <!-- <div class="card"> -->
+                    <!-- <img width="100%" src="./img/sandwhich.jpeg"> -->
+                <!-- </div> -->
+            </div>
+            <div class="releaser" style="grid-template-columns: 1fr 1fr 1fr; transform: translateY(5vw);">
+                <div class="card l">
+                    <img src="./img/fudge.jpeg" width="100%" height="105%">
+                </div>
+                <div class="card m">
+                    <img src="./img/better_cake.jpeg" width="100%" height="105%">
+                </div>
+                <div class="card r">
+                    <img src="./img/my_cooking_pro.jpeg" width="100%" height="105%">
+                </div>
+            </div>
+            <div class="releaser" style="grid-template-columns: 1fr 1fr 1fr; transform: translateY(-5vw);">
+                <div class="card l">
+                    <img src="./img/sandwhich.jpeg" width="100%" height="105%">
+                </div>
+                <div class="card n" style="z-index: 1;">
+                    <img src="./img/kris.jpeg" width="100%" height="105%">
+                </div>
+                <div class="card r" style="z-index: 2;">
+                    <img src="./img/innocent.jpeg" width="100%" height="105%">
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./img/preconvo.jpeg" width="100%" height="105%">
+
+            </div>
+
+            <div class="releaser" style="grid-template-columns: 1fr 1fr 1fr 1fr 1fr;">
+                <div></div>
+                <div></div>
+                <div class="text">
+                    <a id="back" href="./index">INDEX!</a>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+<!--
+
+LIFE
+
+Living w Mortaza & Rayan
+Rarily visiting the other apartments
+
+
+-->

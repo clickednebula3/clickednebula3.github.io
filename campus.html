@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Campus</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="./img/cake.jpeg">
+    </head>
+    <style>
+        body {
+            background: rgb(14, 14, 14);
+            color: rgb(204, 204, 204);
+
+            font-family: "Yeon Sung", system-ui;
+            font-weight: 400;
+            font-size: 3vw;
+            font-style: normal;
+        }
+        .holder {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin: 5vw;
+            gap: 5vw;
+        }
+        .releaser {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5vw;
+        }
+        .text {
+            width: 90%;
+            height: auto;
+            margin: 2vw;
+            text-wrap: wrap;
+            font-size: 2vw;
+        }
+        .card {
+            background-color: rgb(24, 24, 24);
+            border: 3px solid rgb(102, 102, 102);
+            color: rgb(153, 153, 153);
+            overflow: hidden;
+            border-radius: 1vw;
+            width: 100%;
+            transition: 150ms;
+        }
+        .card:hover {
+            transform: rotate(1deg) scale(1.05);
+            border: 2px solid red;
+            color: #ffffff;
+        }
+        #back {
+            font-size: 3vw;
+        }
+    </style>
+    <script>
+        
+        var hue = 0;
+        window.onload = ()=>{
+            setInterval(function () {
+                hue += 1/80; while (hue > 1) { hue -= 1; }
+                var back = document.getElementById("back");
+                back.style.color = "hsl("+(hue*360)+", 100%, 50%)";
+            }, 100);
+        }
+
+    </script>
+    <body>
+        <div class="holder">
+            <a style="color: red; font-size: 4vw; text-decoration: none;" href="./index">Campus</a>
+            <div class="releaser">
+                <div></div>
+                <div class="card">
+                    <div class="text">
+                        We spent most our learning in Fisher-Bennet Hall.
+                        "FBH" has calm spaces for studying and a student center (with magically refilling hot chocolate).
+                        It's pretty great.
+                    </div>
+                </div>
+                <div style="display: grid; grid-template-rows: 2fr 1fr">
+                    <div class="card">
+                        <div class="text">
+                            <div class="text">
+                                Also in FBH, I heard about <span style="color: white">Andrew Peterson</span>'s Professional Communication Club, so I started attending some of the weekly meetings.
+                                I learned how to write my name in Japanease, Chinease, Korean, and even the exotic languages of English and Arabic.
+                                We recently had ELP's End of session trip to Morris Arboretum and it was so calming!<br>
+                            </div>
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+                <div style="display: grid; grid-template-rows: 1fr 2fr">
+                    <div></div>
+                    <div class="card">
+                        <img src="./img/procomm.jpeg" width="100%" height="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <img width="100%" height="100%" src="./img/upgradejam.jpg">
+                </div>
+                <div class="card" style="height: 50%;">
+                    <div class="text">
+                        I joined UPGRADE Game Development club!
+                        Almojil and I attended their last meeting recently.
+                        The team was excited to see their 2-3 months of work (basically) complete!
+                    </div>
+                </div>
+                <div class="card" style="height: 70%;">
+                    <div class="text">
+                        For a while, I played alongside Penn Band.
+                        I know how to play the piano, but I never learned to play sheet music.
+                        I thought I'd play the Bells because it's similar.
+                        But I couldn't play the songs they were playing because I didn't have time to practice.
+                    </div>
+                </div>
+                <div class="card">
+                    <img width="100%" height=100% src="./img/pennband.jpeg">
+                </div>
+            </div>
+            <div class="card">
+                <div class="text">
+                    On every other Monday, Greenfield Intercultural Center hosted a meetup to chat and eat free pancakes!
+                    I tried to attend most of those.
+                </div>
+            </div>
+            <div class="releaser" style="grid-template-columns: 1fr 1fr 1fr 1fr 1fr;">
+                <div></div>
+                <div></div>
+                <div class="text">
+                    <a id="back" href="./index">INDEX!</a>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+<!--
+
+CAMPUS
+
+    FBH ELP & PRO COMM
+    DRL & Market C
+    UGPRADE Levine
+    PENN BAND
+    GIC Free Pancakes
+
+-->

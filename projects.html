@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projects</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="./img/cake.jpeg">
+    </head>
+    <style>
+        body {
+            background: rgb(14, 14, 14);
+            color: rgb(204, 204, 204);
+
+            font-family: "Yeon Sung", system-ui;
+            font-weight: 400;
+            font-size: 3vw;
+            font-style: normal;
+        }
+        .holder {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin: 5vw;
+            gap: 5vw;
+        }
+        .releaser {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5vw;
+        }
+        .text {
+            width: 90%;
+            height: auto;
+            margin: 2vw;
+            text-wrap: wrap;
+            font-size: 2vw;
+        }
+        .card {
+            background-color: rgb(24, 24, 24);
+            border: 3px solid rgb(102, 102, 102);
+            color: rgb(153, 153, 153);
+            overflow: hidden;
+            border-radius: 1vw;
+            width: 100%;
+            transition: 150ms;
+        }
+        .card:hover {
+            transform: rotate(1deg) scale(1.05);
+            border: 2px solid royalblue;
+            color: #ffffff;
+        }
+        #back {
+            font-size: 3vw;
+        }
+    </style>
+    <script>
+        
+        var hue = 0;
+        window.onload = ()=>{
+            setInterval(function () {
+                hue += 1/80; while (hue > 1) { hue -= 1; }
+                var back = document.getElementById("back");
+                back.style.color = "hsl("+(hue*360)+", 100%, 50%)";
+                var index = document.getElementById("index2");
+                index.style.color = "hsl("+(hue*360)+", 100%, 30%)";
+            }, 100);
+        }
+
+    </script>
+    <body>
+        <div class="holder">
+            <a style="color: royalblue; font-size: 4vw; text-decoration: none;" href="./index">Projects</a>
+            <div class="card">
+                <div class="text">
+                    Working on Projects is my favorite part, so I'm really excited to share them!<br>
+                </div>
+            </div>
+            <div class="releaser">
+                <div class="releaser" style="grid-template-columns: 1fr; display: grid; grid-template-rows: 1fr 5fr 1fr">
+                    <div class="card">
+                        <div class="text">
+                            This March, I worked on a Digital Comic called "Drop." I felt I needed a recent and complet work.<br>
+                            Read on <a href="https://mspfa.com/?s=62320&p=14">MSPFA</a> or <a href="https://www.webtoons.com/en/canvas/drop/transformed-negative-across-the-vertical-axis/viewer?title_no=1031208&episode_no=6">WebToons</a>.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/drop.png" width="100%"><br>
+                    </div>
+                </div>
+                <div class="releaser" style="grid-template-columns: 1fr; grid-template-rows: 1fr 2fr 1fr 2fr">
+                    <div class="card">
+                        <div class="text">
+                            MIT Maker Portfolio (Contents are before FY).<br>
+                            I didn't get into MIT, but working on this made me feel about myself.
+                        </div>
+                    </div>
+                    <div>
+                        <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/Otpzdbi0Y8M?&amp;controls=0" title="Abdullah Maker Portfolio" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="border-radius: 1vw; "></iframe>
+                    </div>
+                    <div class="card">
+                        <div class="text">
+                            I made this Salamender/Lizard that moves fluidly almost as if it was alive.<br>
+                            Mortaza helped with the Math for the leg positions.
+                        </div>
+                    </div>
+                    <div class="card">
+                        <video controls width="100%" height="100%">
+                            <source src="./img/salamander.mov">
+                            Not working
+                        </video>
+                    </div>
+
+                </div>
+            </div>
+            <div class="releaser">
+                <div class="releaser" style="grid-template-columns: 1fr; display: grid; grid-template-rows: 1fr 3fr 1fr">
+                    <div class="card">
+                        <div class="text">
+                            UPGRADE Fall Game Jam 2024<br>
+                            I worked on Hazard Hurdle!
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="https://nebbinz.itch.io/hazard-hurdle" tabindex="_blank"><img src="./img/hazardLogo.png" width="100%"></a>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="releaser" style="grid-template-columns: 1fr; grid-template-rows: 1fr 1fr 3fr">
+                    <div></div>
+                    <div class="card">
+                        <div class="text">
+                            UPGRADE Spring Game Jam 2025<br>
+                            I worked on Wavering Function.
+                        </div>
+                    </div>
+                    <div>
+                        <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/Tjd1GZ1yzTw?&amp;controls=0" title="Abdullah Maker Portfolio" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="border-radius: 1vw; "></iframe>
+                    </div>
+                </div>
+                <div class="releaser" style="grid-template-columns: 1fr; display: grid; grid-template-rows: 2fr 2fr 2fr">
+                    <div class="card">
+                        <div class="text">
+                            I worked on an Minecraft Plugin that summons particles with math formulas!
+                            I don't have a plan for this, but I made it to experiment.
+                            it looks neat.<br><br>
+                            Mortaza helped me with the math for changing the color using HSV to RGB.<br>
+                            (It's way easier here for the <span id="index2">INDEX</span> button because of the lack of conversion).
+                        </div>
+                    </div>
+                    <div></div>
+                    <div class="card">
+                        <video controls width="100%" height="100%">
+                            <source src="./img/mc_particles_3.mov">
+                            failed to load video
+                        </video>
+                    </div>
+                </div>
+                <div class="releaser" style="grid-template-columns: 1fr; grid-template-rows: 1fr 2fr 2fr 1fr">
+                    <div></div>
+                    <div class="card">
+                        <video controls width="100%" height="100%">
+                            <source src="./img/mc_particles_1.mp4">
+                            failed to load video
+                        </video>
+                    </div>
+                    <div class="card">
+                        <video controls width="100%" height="100%">
+                            <source src="./img/mc_particles_2.mov">
+                            failed to load video
+                        </video>
+                    </div>
+                    <div></div>
+                </div>
+                <!-- <div class="releaser" style="grid-template-columns: 1fr; grid-template-rows: 1fr 2fr 1fr 2fr">
+                    <div></div>
+                    <div class="card">
+                        <div class="text">
+                            <video controls width="100%">
+                                <source src="./img/caps">
+                                no load
+                            </video>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div class="card">
+                        <div class="text">
+                            NewNeb
+                        </div>
+                    </div>
+                </div>
+                <div class="releaser" style="grid-template-columns: 1fr; grid-template-rows: 2fr 1fr 2fr 1fr">
+                    <div class="card">
+                        <div class="text">
+                            Shatter Shot
+                        </div>
+                    </div>
+                    <div></div>
+                    <div class="card">
+
+                    </div>
+                    <div></div>
+                </div> -->
+            </div>
+            <!-- <div class="card">
+                <div class="text">
+                    Maker Portfolio
+                    <hr>
+                    <div class="releaser">
+                        <div class="text">
+
+                        </div>
+                        <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/Otpzdbi0Y8M?&amp;controls=0" title="Abdullah Maker Portfolio" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="border-radius: 1vw; "></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="releaser">
+                <div class="releaser" style="grid-template-rows: 3fr 2fr; grid-template-columns: 1fr;">
+                    <div class="card">
+                        <div class="text">
+                            This March, I worked on a Digital Comic called "Drop."<br>
+                            I felt I needed a more recent completed work.<br>
+                            <img src="./img/drop.png" width="70%"><br>
+                            Read on <a href="https://mspfa.com/?s=62320&p=14">MSPFA</a> or <a href="https://www.webtoons.com/en/canvas/drop/transformed-negative-across-the-vertical-axis/viewer?title_no=1031208&episode_no=6">WebToons</a>.
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="releaser" style="grid-template-rows: 2fr 2fr 1fr; grid-template-columns: 1fr;">
+                    <div></div>
+                    <div class="card">
+                        <div class="text">
+                            test
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="releaser">
+                <div class="releaser" style="grid-template-columns: 1fr; grid-template-rows: 4fr 3fr;">
+                    <div class="card">
+                        <video controls width="100%">
+                            <source src="./img/sand.mov">
+                        </video>
+                    </div>
+                </div>
+                <div class="card">
+                    <video controls width="100%">
+                        <source src="./img/anim_study.mov">
+                    </video>
+                </div>
+            </div>
+            <div class="releaser" style="grid-template-columns: 1fr 1fr 1fr 1fr 1fr;">
+                <div></div>
+                <div></div>
+                <div class="text">
+                    <a id="back" href="./index">INDEX!</a>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+<!--
+
+PROJECTS
+
+    // Working on projects is my favorite part.
+
+    // Upgrade Fall Game Jam / Hazard Hurdle
+    // MIT Maker Portfolio ()
+    // 
+
+Projects<br>
+    [
+        Shatter Shot, Drop, Salamander,
+        GameJams (Wavering Function & Hazard Hurdle),
+        Leylore, IntegralCalc, MIT Maker Portfolio, NewNeb,
+        Capskibaps, Test Particle MC Plugin, Gender Expression, other presentations...
+
+Penn Engagement<br>
+    [UPGRADE, ProComm, Soup Kitchen, PennBand, MSA, Pancake Monday, ThanksGiving]<br><br>
+
+Life at Penn w KGSP FY team<br>
+    [Scavenger Hunt, Paloma, Sky Lounge, Minecraft Movie, Sonic 3]<br>
+Snapshot Gallary<br>
+    []<br><br>
+
+Other highlights<br>
+    [RPW Research, Mindfulness, Roller Skates, Ice Rink, ISSAM, Christmas w Frank Alegra, Askus, Fudge]<br>
+Other lowdarks<br>
+    [Common App, UC App, Chase Bank]<br>
+Essay Statistics (how many rewrites, how many unique essays, etc...)<br><br>
+
+Tribute to Professor Z<br>
+Tribute to KGSP FY<br> -->
+
+
+
+
+

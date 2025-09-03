@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admission</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="./img/cake.jpeg">
+    </head>
+    <style>
+        body {
+            background: rgb(14, 14, 14);
+            color: rgb(204, 204, 204);
+
+            font-family: "Yeon Sung", system-ui;
+            font-weight: 400;
+            font-size: 3vw;
+            font-style: normal;
+        }
+        .holder {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin: 5vw;
+            gap: 5vw;
+        }
+        .releaser {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5vw;
+        }
+        .text {
+            width: 90%;
+            height: auto;
+            margin: 2vw;
+            text-wrap: wrap;
+            font-size: 2vw;
+        }
+        .card {
+            background-color: rgb(24, 24, 24);
+            border: 3px solid rgb(102, 102, 102);
+            color: rgb(153, 153, 153);
+            overflow: hidden;
+            border-radius: 1vw;
+            width: 100%;
+            transition: 150ms;
+        }
+        .card:hover {
+            transform: rotate(1deg) scale(1.05);
+            border: 2px solid orange;
+            color: #ffffff;
+        }
+        #back {
+            font-size: 3vw;
+        }
+    </style>
+    <script>
+        
+        var hue = 0;
+        window.onload = ()=>{
+            setInterval(function () {
+                hue += 1/80; while (hue > 1) { hue -= 1; }
+                var back = document.getElementById("back");
+                back.style.color = "hsl("+(hue*360)+", 100%, 50%)";
+            }, 100);
+        }
+
+    </script>
+    <body>
+        <div class="holder">
+            <a style="color: orange; font-size: 4vw; text-decoration: none;" href="./index">Admission</a>
+            <div class="card">
+                <div class="text">
+                    The US admission process is more complicaed & frustrating than needs be.
+                    I might not have been able to go through it alone. Case in point: I missed the deadline before the gap year.<br><br>
+                    I plan to keep with me what I learned about How to reach information, Maintaining motivation, and Setting goals for the rest of my life.
+                    I try to have the mentality of "I don't need university to reach my success/happiness," but I understand how it makes things much easier.<br><br>
+                    I understand I'm lucky to be in the postion I am now, so I am grateful.<br>
+                </div>
+            </div>
+            <div class="releaser">
+                <div style="display: grid; grid-template-rows: 1fr 2fr">
+                    <div></div>
+                    <div class="card">
+                        <div class="text">
+                            > Be me<br>
+                            > It's late o' clock<br>
+                            > In a basketball match<br>
+                            > I was playing the bells instrument alongside Penn Band.<br>
+                            > I receive my admission to <span style="color: orange;">UIUC'29</span>!<br>
+                            > I was accepted as my first-choice major: <span style="color: orange;">Computer Engineering</span>.<br>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: grid; grid-template-rows: 2fr 1fr">
+                    <div class="card" style="height: 20vw;">
+                        <img src="./img/cake.jpeg" style="transform:translate(0, -7vw); " width="100%">
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="releaser" style="grid-template-columns: 1fr 1fr 1fr 1fr 1fr;">
+                <div></div>
+                <div></div>
+                <div class="text">
+                    <a id="back" href="./index">INDEX!</a>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+<!--
+
+ADMISSION
+    [Computer Engineering @ UIUC'29]
+
+    [time o' clock]... [basketball game location]...
+    I was playing the bells instrument alongside Penn Band when I read my admission to <a>UIUC</a>.
+    I am accepted as my first-choice major: Computer Engineering.
+
+    //what point in the program did I release?
+    //thanks to [btn]
+    //stats?
+    
+-->
+
+
+
+
+

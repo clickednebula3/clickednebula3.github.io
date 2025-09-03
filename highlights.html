@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Highlights</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="./img/cake.jpeg">
+    </head>
+    <style>
+        body {
+            background: rgb(14, 14, 14);
+            color: rgb(204, 204, 204);
+
+            font-family: "Yeon Sung", system-ui;
+            font-weight: 400;
+            font-size: 3vw;
+            font-style: normal;
+        }
+        .holder {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin: 5vw;
+            gap: 5vw;
+        }
+        .releaser {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5vw;
+        }
+        .text {
+            width: 90%;
+            height: auto;
+            margin: 2vw;
+            text-wrap: wrap;
+            font-size: 2vw;
+        }
+        .card {
+            background-color: rgb(24, 24, 24);
+            border: 3px solid rgb(102, 102, 102);
+            color: rgb(153, 153, 153);
+            overflow: hidden;
+            border-radius: 1vw;
+            width: 100%;
+            transition: 150ms;
+        }
+        .card:hover {
+            transform: rotate(1deg) scale(1.05);
+            border: 2px solid yellow;
+            color: #ffffff;
+        }
+        #back {
+            font-size: 3vw;
+        }
+    </style>
+    <script>
+        
+        var hue = 0;
+        window.onload = ()=>{
+            let vid = document.getElementById("amaze");
+            vid.playbackRate = 4;
+
+            setInterval(function () {
+                hue += 1/80; while (hue > 1) { hue -= 1; }
+                var back = document.getElementById("back");
+                back.style.color = "hsl("+(hue*360)+", 100%, 50%)";
+            }, 100);
+        }
+
+    </script>
+    <body>
+        <div class="holder">
+            <a style="color: yellow; font-size: 4vw; text-decoration: none;" href="./index">Highlights</a>
+            <div class="releaser">
+                <div style="display: grid; grid-template-rows: 1fr 2fr">
+                    <div></div>
+                    <div class="card">
+                        <div class="text">
+                            During UPGRADE's Fall Game Jam, the craziest thing happened.<br>
+                            I got to meet Neb! There's two of us!<br><br>
+                            Neb was a 2 year-long member of my minecraft server "NebPVP", he joined because found it when he, one day, googled his username.
+                            We did not contact to meet up, but he was here as an exchange student from switzerland! He noticed me when he joined UPGRADE's discord server.<br>
+                            We also both play deltarune (see ralsei on his shirt and my discord pfp at the time).
+                        </div>
+                    </div>
+                </div>
+                <div style="display: grid; grid-template-rows: 2fr 1fr">
+                    <div class="card">
+                        <img src="./img/neb.jpeg" width="100%" height="100%">
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="releaser">
+                <div class="card">
+                    <video controls width="100%" height="100%" id="amaze">
+                        <source src="./img/Maze.mp4">
+                    </video>
+                </div>
+                <div class="card">
+                    <div class="text">
+                        In UPenn's Crack the Code club someone posted a programming maze.<br>
+                        Accpting the challenge, I made an <a href="https://github.com/clickednebula3/Mark-J-P-Wolf-Fractal-Puzzle/">algorithm</a> to solve it.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="text">
+                    During FY I had my first Saudi Arabia National Day outside it.
+                </div>
+            </div>
+            <div class="releaser">
+                <div class="card">
+                    <img src="./img/ksa_national_day.jpeg" width="100%" height="100%">
+                </div>
+                <div class="card">
+                    <img src="./img/ksa_national_day_event.jpeg" width="100%" height="100%">
+                </div>
+            </div>
+
+            <div class="releaser" style="grid-template-columns: 1fr 1fr 1fr 1fr 1fr;">
+                <div></div>
+                <div></div>
+                <div class="text">
+                    <a id="back" href="./index">INDEX!</a>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+<!--
+
+HIGHLIGHTS
+
+- Meeting Niko Neb!
+- Rain World / Undertale / High Potential w Mortaza
+- Having pancakes with rayan and mortaza after sat||toefl
+- Side quest
+
+-->

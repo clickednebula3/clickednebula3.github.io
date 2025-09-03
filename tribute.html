@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tribute</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="./img/icecat.jpeg">
+    </head>
+    <style>
+        body {
+            background: rgb(14, 14, 14);
+            color: rgb(204, 204, 204);
+
+            font-family: "Yeon Sung", system-ui;
+            font-weight: 400;
+            font-size: 3vw;
+            font-style: normal;
+        }
+        hr {
+            border-color: darkgray;
+        }
+        .holder {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin: 5vw;
+            gap: 5vw;
+        }
+        .releaser {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5vw;
+        }
+        .text {
+            width: 90%;
+            height: auto;
+            margin: 2vw;
+            text-wrap: wrap;
+            font-size: 2vw;
+        }
+        .text2 {
+            width: 90%;
+            height: auto;
+            margin: 2vw;
+            text-wrap: wrap;
+            font-size: 2vw;
+            color: rgb(200, 200, 200);
+        }
+        .a {
+            transform: translateX(-4vw);
+        }
+        .b {
+            transform: translateX(4vw);
+        }
+        .card {
+            background-color: rgb(24, 24, 24);
+            border: 3px solid rgb(102, 102, 102);
+            color: rgb(62, 62, 62);
+            overflow: hidden;
+            border-radius: 1vw;
+            width: 100%;
+            transition: 150ms;
+        }
+        .card:hover {
+            transform: rotate(1deg) scale(1.05);
+            border: 2px solid darkgray;
+            color: darkgray;
+        }
+        #back {
+            font-size: 3vw;
+        }
+    </style>
+    <script>
+
+        var hue = 0;
+
+        window.onload = ()=>{
+
+            setInterval(function () {
+                hue += 1/80; while (hue > 1) { hue -= 1; }
+                var back = document.getElementById("back");
+                back.style.color = "hsl("+(hue*360)+", 100%, 50%)";
+            }, 100);
+
+            document.getElementById('zform').addEventListener('submit', function(event) {
+                event.preventDefault();
+                var pass = document.getElementById('pass').value;
+                window.open("./"+pass+".htm");
+                //no, I would not just put the pass here
+                //mwahaha
+                //I'd give a hint, but...
+                //you have too many hints already
+            });
+
+        }
+
+    </script>
+    <body>
+        <div class="holder">
+            <a style="color: white; font-size: 4vw; text-decoration: none;" href="./index">Tribute</a>
+            <div class="releaser" style="grid-template-columns: 1fr 14fr 1fr">
+                <div></div>
+                <div class="card">
+                    <div class="text">
+                        KGSPiers were interviewed with a randomly selected question from a curated pool. Here are their answers.
+                    </div>
+                </div>
+            </div>
+            <div class="releaser" style="grid-template-columns: 1fr 5fr 1fr">
+                <div></div>
+                <div class="releaser" style="grid-template-columns: 1fr">
+                    <div class="card a">
+                        <div class="text2">
+                            Abdulrahman Almojil [Audio]
+                            <hr>
+                            What is something you lost?
+                            <hr>
+                            <audio controls>
+                                <source src="./img/Mojil.m4a" type="audio/m4a">
+                                <source src="./img/Mojil.ogg" type="audio/ogg">
+                                <source src="./img/Mojil.mp3" type="auido/mp3">
+                                Your browser does not support this audio filetype.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="card b">
+                        <div class="text2">
+                            Abdullah Alabdullah [Speach-to-text]
+                            <hr>
+                            Would you rather: Instant space travel (teleportation) or Instant time travel (reasonable location)?
+                            <hr>
+                            I would rather time travel because it's just more OP it's more powerful
+                            like you could progress in life way easier like I could go buy back and
+                            buy a bunch of Bitcoin and then fast forward and then I'm rich as hell
+                            and I would never age at all I could just time travel back to when I was
+                            younger and it would be awesome. space travel it's not really that useful
+                            because nowadays you could just go wherever you want and if I wanted to go
+                            out like to another galaxy or whatever space travel ما منه فائدة since
+                            there's no there's no humans and there's no like way I could survive.
+                        </div>
+                    </div>
+                    <div class="card a">
+                        <div class="text2">
+                            Rayan Aljuhani [Typed Text]
+                            <hr>
+                            Which is better: Minecraft Movie vs Sonic The Hedghog 3?
+                            <hr>
+                            Sonic the Hedgehog 3 because I didn't see the "A Minecraft Movie."<br>
+                            I also don't like Minecraft (not that I hate it--I just don't enjoy it).<br><br>
+                            
+                            Gotta go fast.
+                        </div>
+                    </div>
+                    <div class="card b">
+                        <div class="text2">
+                            Adeeb Alshehry [Audio]
+                            <hr>
+                            What is one club you enjoyed attending?
+                            <hr>
+                            <audio controls>
+                                <source src="./img/Adeeb.m4a" type="audio/m4a">
+                                <source src="./img/Adeeb.ogg" type="audio/ogg">
+                                <source src="./img/Adeeb.mp3" type="auido/mp3">
+                                Your browser does not support this audio filetype.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="card a">
+                        <div class="text2">
+                            Rayan Alsinan [Audio]
+                            <hr>
+                            What is one Project you enjoyed making?
+                            <hr>
+                            <audio controls>
+                                <source src="./img/RayanS.m4a" type="audio/m4a">
+                                <source src="./img/RayanS.ogg" type="audio/ogg">
+                                <source src="./img/RayanS.mp3" type="audio/mp3">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="card b">
+                        <div class="text2">
+                            Mortaza Alkhames [Lost Audio]
+                            <hr>
+                            Who would win: Issam vs WaWa vs your local chef (in an all out cook-off)?
+                            <hr>
+                            ...
+                            <hr>
+                            Mortaza answered with audio, but the file got corrupted because it was too long<br>
+                            <!-- [The audio file was too long and got corrupted because I ran out of storage.]
+                            [Mortaza answered in audio (1min20sec), but the file got corrupted because of my poor storage management.]<br> -->
+                            After dicussing factors like Experience, Price, and a third factor, the final consensus was: Issam.<br><br>
+                            Have this audio instead:<br>
+                            <audio controls>
+                                <source src="./img/mortaza_ready.m4a">
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="card a">
+                        <div class="text2">
+                            Faisal Almugaiteeb [Text]
+                            <hr>
+                            Ask an "Askus" themed question for the person after you.
+                            <hr>
+                            Who is most likely to eat without checking the label?
+                        </div>
+                    </div>
+                    <div class="card b">
+                        <div class="text2">
+                            Khalid Alhussayen [Audio]
+                            <hr>
+                            What is your favorite FY course?
+                            <hr>
+                            <audio controls>
+                                <source src="./img/khalid.m4a" type="audio/m4a">
+                                <source src="./img/khalid.ogg" type="audio/ogg">
+                                <source src="./img/khalid.mp3" type="auido/mp3">
+                                Your browser does not support this audio filetype.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="card a">
+                        <div class="text2">
+                            Mohammed Abualsaud [Audio]
+                            <hr>
+                            What misconception did you have about the US?
+                            <hr>
+                            <audio controls>
+                                <source src="./img/moh.m4a" type="audio/m4a">
+                                <source src="./img/moh.ogg" type="audio/ogg">
+                                <source src="./img/moh.mp3" type="auido/mp3">
+                                Your browser does not support this audio filetype.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="card b">
+                        <div class="text2">
+                            Amer Alhazmi [Text]
+                            <hr>
+                            What was your RPW Research about?
+                            <hr>
+                            My research was about Virtiual Tourism.
+                        </div>
+                    </div>
+                    <div class="card a">
+                        <div class="text2">
+                            Mirza Al Karam [Audio]
+                            <hr>
+                            How many times did you rewrite the majority of your personal statement?
+                            <hr>
+                            <audio controls>
+                                <source src="./img/mirza.m4a" type="audio/m4a">
+                                <source src="./img/mirza.ogg" type="audio/ogg">
+                                <source src="./img/mirza.mp3" type="auido/mp3">
+                                Your browser does not support this level of ascention.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="card b">
+                        <div class="text2">
+                            Wesam Al Qanbar [Text]
+                            <hr>
+                            Answer "Who is most likely to eat without checking the label?"
+                            <hr>
+                            Mirza thinks that veggie chicken is actually good, healthy and made of plants.
+                        </div>
+                    </div>
+                    <div class="card a">
+                        <div class="text2">
+                            Rasheed Alhaddad [Text]
+                            <hr>
+                            What is your favorite mindfulness exercise?
+                            <hr>
+                            54321 grounding
+                        </div>
+                    </div>
+                    <div class="card b">
+                        <div class="text2">
+                            Abdullah Alsunayni [Audio]
+                            <hr>
+                            What was the most annoying or your most favcorite Essay Prompt?
+                            <hr>
+                            <audio controls>
+                                <source src="./img/alsunfinal.m4a" type="audio/m4a">
+                                <source src="./img/alsunfinal.ogg" type="audio/ogg">
+                                <source src="./img/alsunfinal.mp3" type="auido/mp3">
+                                Your browser does not support this level of ascention.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="card a">
+                        <div class="text2">
+                            Lana Almajnouni [Text]
+                            <hr>
+                            Ask an "Askus" themed question for the person after you.
+                            <hr>
+                            What's your favorite memory from the FY?
+                        </div>
+                    </div>
+                    <div class="card b">
+                        <div class="text2">
+                            Shumukh Alabdullah [Text]
+                            <hr>
+                            If FY Cohort 17 was a thing, what would you change in the system?
+                            <hr>
+                            If I could, I’d probably change the structure of the program to only have classes like math, SEUU, after the college application season.
+                        </div>
+                    </div>
+                    <div class="card a">
+                        <div class="text2">
+                            Hadwa Alruhaili [Text]
+                            <hr>
+                            What's your favorite memory from the FY?
+                            <hr>
+                            I think the best part about foundation year was randomly ending up in NYC.
+                        </div>
+                    </div>
+                    <div class="card b">
+                        <div class="text2">
+                            Lama Alfares [Text]
+                            <hr>
+                            What was your favorite ramadan day?
+                            <hr>
+                            Ivy day happened to fall during the last few days of ramadan. It was nice because I found out I got into my dream school!!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="releaser" style="grid-template-columns: 1fr;">
+                <div></div>
+                <div class="card">
+                    <div class="text">
+                        R.I.P. KGSP Foundation Year (Cohorts 1 through 16)<br>
+                        R.I.P. Sergio Zefelippo Jr. (1955-2025)<br>
+                    </div>
+                </div>
+            </div>
+            <div class="releaser" style="grid-template-columns: 1fr 14fr 1fr">
+                <div></div>
+                <div class="card">
+                    <div class="text">
+                        To proceed any further, use your hints to enter the password:<br>
+                        <form id="zform">
+                            <input style="background-color: gray; border-radius: 1vw;" type="password" id="pass">
+                            <input style="background-color: lightgray; border-radius: 1vw;" type="submit" value="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="releaser" style="grid-template-columns: 1fr 1fr 1fr 1fr 1fr;">
+                <div></div>
+                <div></div>
+                <div class="text">
+                    <a id="back" href="./index">INDEX!</a>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </body>
+</html>

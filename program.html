@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Program</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="./img/cake.jpeg">
+    </head>
+    <style>
+        body {
+            background: rgb(14, 14, 14);
+            color: rgb(204, 204, 204);
+
+            font-family: "Yeon Sung", system-ui;
+            font-weight: 400;
+            font-size: 3vw;
+            font-style: normal;
+        }
+        hr {
+            border-color: darkgray;
+        }
+        .holder {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin: 5vw;
+            gap: 5vw;
+        }
+        .releaser {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5vw;
+        }
+        .text {
+            width: 90%;
+            height: auto;
+            margin: 2vw;
+            text-wrap: wrap;
+            font-size: 2vw;
+        }
+        .card {
+            background-color: rgb(24, 24, 24);
+            border: 3px solid rgb(102, 102, 102);
+            color: rgb(153, 153, 153);
+            overflow: hidden;
+            border-radius: 1vw;
+            width: 100%;
+            transition: 150ms;
+        }
+        .card:hover {
+            transform: rotate(1deg) scale(1.05);
+            border: 2px solid aqua;
+            color: #ffffff;
+        }
+
+        .l { transform: rotate(-7deg) translateX(9vw); }
+        .l:hover { transform: rotate(-7deg) translateX(5vw); }
+        .m { transform: rotate(1deg); }
+        .m:hover { transform: rotate(1deg) translateY(-4vw); }
+        .n { transform: rotate(-1deg); }
+        .n:hover { transform: rotate(-1deg) translateY(-10vw); }
+        .r { transform: rotate(5deg) translateX(-9vw); }
+        .r:hover { transform: rotate(5deg) translateX(-5vw); }
+
+        #back {
+            font-size: 3vw;
+        }
+    </style>
+    <script>
+        
+        var hue = 0;
+        window.onload = ()=>{
+            setInterval(function () {
+                hue += 1/80; while (hue > 1) { hue -= 1; }
+                var back = document.getElementById("back");
+                back.style.color = "hsl("+(hue*360)+", 100%, 50%)";
+            }, 100);
+        }
+
+    </script>
+    <body>
+        <div class="holder">
+            <a style="color: aqua; font-size: 4vw; text-decoration: none;" href="./index">Program</a>
+            <div class="card">
+                <div class="text">
+                    The KGSP Foundation Year at UPenn was a custom program split into two main sessions designed to set us up for success at our future universities.<br>
+                    My KGSP Advisor was <span style="color:aqua">Susanna Renfrow</span>, and our FY Coordinator is <span style="color:aqua">Leah Greenspoon</span>.<br>
+                </div>
+            </div>
+            <div class="releaser">
+                <div class="card">
+                    <div class="text">
+                        How was the <span style="color: rgb(200, 119, 65)">Fall</span>?<br>
+                        This part is about applying to universities.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="text">
+                        <span style="color: rgb(55, 146, 76)">Spring</span> it on!<br>
+                        This part is about university practice.
+                    </div>
+                </div>
+            </div>
+            <div class="releaser" style="grid-template-columns: 1fr 1fr 1fr; transform: translateY(5vw);">
+                <div class="card l">
+                    <img src="./img/gratitude.jpeg" width="100%" height="105%">
+                </div>
+                <div class="card m">
+                    <img src="./img/kgsp.jpeg" width="100%" height="105%">
+                </div>
+                <div class="card r">
+                    <img src="./img/mindfulness.jpeg" width="100%" height="105%">
+                </div>
+            </div>
+            <div class="releaser" style="grid-template-columns: 1fr 1fr 1fr; transform: translateY(-5vw);">
+                <div class="card l">
+                    <img src="./img/scav.jpeg" width="100%" height="105%">
+                </div>
+                <div class="card n">
+                    <img src="./img/tabs_off.jpeg" width="100%" height="105%">
+                </div>
+                <div class="card r">
+                    <img src="./img/ksa_national_day.jpeg" width="100%" height="105%">
+                </div>
+            </div>
+            <div class="releaser">
+                <div class="card">
+                    <div class="text">
+                        <span style="color: rgb(200, 119, 65)">Success & Engagement at US Universities</span><br>
+                        Thanks to: <span style="color: white">Laurine Sibilia</span> & <span style="color: white">Leah Greenspoon</span><br>
+                        <hr>
+                        My favorite thing about this class is the emphasis on mental health.
+                        I also liked the lesson about clearing your mind from the clutter/aiming your attention and the one about character traits.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="text">
+                        <span style="color: rgb(55, 146, 76)">Physics</span><br>
+                        Thanks to: <span style="color: white">Mary Marcopul</span><br>
+                        <hr>
+                        This class fills me with enthusiasism for physics!
+                        It's filled with demonstrations and fun collaboration labs. (The latest demo was basically a laser lightshow).<br>
+                        It also involves the occasional life lesson.<br> 
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="text">
+                    <span style="color: rgb(200, 119, 65)">Writing University Application Essays</span> & <span style="color: rgb(55, 146, 76)">Advanced Topics in American Culture</span><br>
+                    Thanks to: <span style="color: white">Eve Nora Litt</span><br>
+                    <hr>
+                    Highlights: Tossing around the Benjamin Franklin Plush, Rotating around the Discussion Stations, and learning inside a "sparky" atmosphere.
+                </div>
+            </div>
+
+            <div class="releaser">
+                <div class="card">
+                    <div class="text">
+                        <span style="color: rgb(200, 119, 65)">Math 1-2</span><br>
+                        Thanks to: <span style="color: gray">Prof. Sergio Zefelippo Jr.</span><br>
+                        <img src="./img/unitcircle.svg" width="50%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="text">
+                        <span style="color: rgb(55, 146, 76)">Calculus</span><br>
+                        Thanks to: <span style="color: white">Marc Muhleisen</span><br>
+                        <hr>
+                        The class is clear and the definitions are stark.
+                        I really like this class!<br>
+                        I think I would've done better if I practiced more homework.<br>
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="text">
+                        <span style="color: rgb(200, 119, 65)">TOEFL</span><br>
+                        Thanks to: <span style="color: white">Felicia Potter</span> & <span style="color:white">Ian Nichols</span><br>
+                        <hr>
+                        Practice Prevents Erosion.<br><br>
+                        Also Ian's pretty funny.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="text">
+                        <span style="color: rgb(55, 146, 76)">Research Paper Writing</span><br>
+                        Thanks to: <span style="color: white">Nate Fair</span><br>
+                        <hr>
+                        I learned to make a <a href="./img/RPW.pdf">Research Paper</a>!
+
+                        <div class="text">
+                            <img src="./img/rpw.jpeg" width="100%">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="text">
+                        <span style="color: rgb(200, 119, 65)">SAT</span><br>
+                        Thanks to: <span style="color: white">Sheila Robinson</span> & <span style="color:white">Frank Allegra</span><br>
+                        <hr>
+                        Bonus: Some students and I went to Sheila's (Thanksgiving) and Frank's (Krismass) parties.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="text">
+                        <span style="color: rgb(55, 146, 76)">Foundations of STEM and Undergraduate Research</span><br>
+                        Thanks to: <span style="color: white">Michael Sullivan</span> & <span style="color: white">Abdul Sohu</span><br>
+                        <hr>
+                        This was a pretty short class.<br>
+                        Favorite part: Design-Thinking.
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="text">
+                        <span style="color: rgb(200, 119, 65)">Essay Coaching</span><br>
+                        Thanks to: <span style="color: white">Amanda Thompson</span><br>
+                        <hr>
+                        Thank you for not cringing at my essays.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="text">
+                        <span style="color: rgb(55, 146, 76)">Programming</span><br>
+                        Thanks to: <span style="color: white">Robert Scheyder</span><br>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="text">
+                    <span style="color: rgb(200, 119, 65)">Math</span> <span style="color: rgb(55, 146, 76)">Tutoring</span><br>
+                    Thanks to: <span style="color: white">Frank Allegra</span><br>
+                </div>
+            </div>
+
+            <div class="releaser">
+                <div class="card">
+                    <div class="text">
+                        <span style="color: rgb(200, 119, 65)">TOEFL Tutoring</span><br>
+                        Thanks to: <span style="color: white">María Fernández</span><br>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="text">
+                        <span style="color: rgb(55, 146, 76)">Physics Tutoring</span><br>
+                        Thanks to: <span style="color: white">Robert Duncan</span><br>
+                        <hr>
+                        It's effecient practicing problems w you!.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="releaser">
+                <div class="card">
+                    <div class="text">
+                        <span style="color: rgb(200, 119, 65)">EAC Coaching</span><br>
+                        Thanks to: <span style="color: white">Erick Hyde</span><br>
+                    </div>
+                </div>
+                <!-- <div class="card">
+                    <div class="text">
+                        <span style="color: rgb(55, 146, 76)">Physics Tutoring</span><br>
+                        Thanks to: <span style="color: white">Robert Duncan</span><br>
+                    </div>
+                </div> -->
+            </div>
+
+            <!-- <div class="releaser" style="grid-template-columns: 1fr 3fr 1fr;">
+                <div></div>
+                <div class="card">
+                    <div class="text">
+                        Is this a farm? Cuz everywhere I look I see GOATs.
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="releaser" style="grid-template-columns: 1fr 1fr 1fr 1fr 1fr;">
+                <div></div>
+                <div></div>
+                <div class="text">
+                    <a id="back" href="./index">INDEX!</a>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+
+

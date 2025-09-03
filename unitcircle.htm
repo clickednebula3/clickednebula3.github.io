@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unlocked</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="./img/my_cooking_pro.jpeg">
+    </head>
+    <style>
+        body {
+            background: rgb(14, 14, 14);
+            color: rgb(204, 204, 204);
+
+            font-family: "Yeon Sung", system-ui;
+            font-weight: 400;
+            font-size: 3vw;
+            font-style: normal;
+        }
+        hr {
+            border-color: darkgray;
+        }
+        .holder {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin: 5vw;
+            gap: 5vw;
+        }
+        .releaser {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5vw;
+        }
+        .text {
+            width: 90%;
+            height: auto;
+            margin: 2vw;
+            text-wrap: wrap;
+            font-size: 2vw;
+        }
+        .text2 {
+            width: 90%;
+            height: auto;
+            margin: 2vw;
+            text-wrap: wrap;
+            font-size: 2vw;
+            color: rgb(200, 200, 200);
+        }
+        .a {
+            transform: translateX(-4vw);
+        }
+        .b {
+            transform: translateX(4vw);
+        }
+        .card {
+            background-color: rgb(24, 24, 24);
+            border: 3px solid rgb(102, 102, 102);
+            color: rgb(62, 62, 62);
+            overflow: hidden;
+            border-radius: 1vw;
+            width: 100%;
+            transition: 150ms;
+        }
+        .card:hover {
+            transform: rotate(1deg) scale(1.05);
+            border: 2px solid darkgray;
+            color: darkgray;
+        }
+        #back {
+            font-size: 3vw;
+        }
+    </style>
+    <script>
+
+        var hue = 0;
+        window.onload = ()=>{
+            setInterval(function () {
+                hue += 1/80; while (hue > 1) { hue -= 1; }
+                var back = document.getElementById("back");
+                back.style.color = "hsl("+(hue*360)+", 100%, 50%)";
+            }, 100);
+        }
+
+    </script>
+    <body>
+        <div class="holder">
+            <a style="color: white; font-size: 4vw; text-decoration: none" href="./index">Unit Circle Unlocked</a>
+            <div class="text">
+                You have won. You unlocked this hidden page!<br>
+                ૮ ˶ᵔ ᵕ ᵔ˶ ა<br><br>
+
+                <span style="color:gray">This project is a private, creative work shared only within this class. This work is intended to be respectful and expressive—not to harm, mock, or misrepresent. Please treat it with discretion.</span><br><br>
+
+                <div class="releaser">
+                    <div class="card">
+                        <div class="text2">
+                            Tribute Track "Pro Zany" - Alsalman<br>
+                            <audio controls loop>
+                                <source src="./ProZany.mp3">
+                                [Pro Zany Music]
+                            </audio><br>
+                            <span style="color: gray;">Final Hint: There is more to this secret.</span>
+                        </div>
+                    </div>
+                </div><br>
+
+                Everyone, do your best in the amazing life that's ahead of you!<br>
+                You've all been mighty great.
+
+            </div>
+
+            <div class="releaser" style="grid-template-columns: 1fr 1fr 1fr 1fr 1fr;">
+                <div></div>
+                <div></div>
+                <div class="text">
+                    <a id="back" href="./index">INDEX!</a>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+<!-- Questions
+    What is one Project you enjoyed making? [RayanS] [Audio]
+    What is one club you enjoyed attending? [Adeeb] [Audio]
+    Would you rather: Instant space travel (teleportation) or Instant time travel (reasonable location)? [Abd^2] [STT]
+    Which is better: Minecraft Movie vs Sonic The Hedghog 3? [RayanJ] [Text]
+    Who would win: Issam vs WaWa vs your local chef (in an all out cook-off)? [Mortaza] [Audio Corrupted! ;_;]
+    What is something you lost? [Mojil] [Audio]
+    Ask an "Askus" themed question for the person after you.  [Faisal] [text]
+    What is your favorite FY course? [Khalid]
+    What misconception did you have about the US? [Moh]
+    What was your RPW Research about? [Amer]
+    How many times did you rewrite the majority of your personal statement? [Mirza]
+    -> Answer "Who is most likely to eat without checking the label?" [wesam]
+    What is your favorite mindfulness exercise? [rasheed]
+    What was the most annoying or your most favcorite Essay Prompt? [alsun]
+    -> Answer "What's your favorite memory from the FY?" [Lana]
+
+    Ask an "Askus" themed question for the person after you. 
+    If FY Cohort 17 was a thing, what would you change in the system?
+    What is your favorite ramadan day?
+    
+    [amer] My research was about Virtiual Tourism.
+    [wesam] mirza thinks that veggie chicken is actually good, healthy and made of plants
+    [rasheed] 54321 grounding
+    [Lana] What's your favorite memory from the FY?
+
+
+-->
+
+
+
+
+
+
+
+
+
+<!-- Hints
+
+    [Mojil] The first letter is U. It is not UPenn.
+    [Abd^2] There are only two sides. The inside, and the outside.
+    [RayanJ] The number of letters is the same as Cygnus's stars.
+    [Adeeb] The number of r is = 1.
+    [rayanS] The password is two words with a ratio of letters 2:3
+    [Mortaza] (for the first word) Second, Metre, Kilogram, Ampere, Kelvin, Mole, Candela
+    [Faisal] Requires implicit differentiation
+    
+    [Khalid] It is a really essential topic.
+    [moh] Would you like me to grade that response?
+    [amer] Kepler's first law. The focus points are one and the same.
+    [mirza] It's a cool thing to have on a jacket.
+    [wesam] March, 14th.
+    [rasheed] relates X, Y, but unfortunately no Z.
+
+    [Alsun] All answers are exactly the same Euclidean Distance away from the main point. 
+    [LanaMJ] The only repeating letters are i and c, and there are two of each.
+    [Hadwa] Taking only unique letters (from both words), "cutliner" is an anagram of the password.
+    [Shumukh] 
+    [Lama] 
+
+    //Mortaza?
+    //!Lama Alfares, !Shumukh Alabdullah, Hadwa Alruhaili
+
+
+-->

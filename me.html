@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Abdullah Alsalman</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="./img/better_cake.jpeg">
+    </head>
+    <style>
+        body {
+            background: rgb(14, 14, 14);
+            color: rgb(204, 204, 204);
+
+            font-family: "Yeon Sung", system-ui;
+            font-weight: 400;
+            font-size: 3vw;
+            font-style: normal;
+        }
+        .holder {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin: 5vw;
+            gap: 5vw;
+        }
+        .releaser {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5vw;
+        }
+        .text {
+            width: 90%;
+            height: auto;
+            margin: 2vw;
+            text-wrap: wrap;
+            font-size: 2vw;
+        }
+        .card {
+            background-color: rgb(24, 24, 24);
+            border: 3px solid rgb(102, 102, 102);
+            color: rgb(153, 153, 153);
+            overflow: hidden;
+            border-radius: 1vw;
+            width: 100%;
+            transition: 150ms;
+        }
+        .card:hover {
+            transform: rotate(1deg) scale(1.05);
+            border: 2px solid white;
+            color: #ffffff;
+        }
+        #back {
+            font-size: 3vw;
+        }
+    </style>
+    <script>
+
+        var hue = 0;
+        window.onload = ()=>{
+            setInterval(function () {
+                hue += 1/80; while (hue > 1) { hue -= 1; }
+                var back = document.getElementById("back");
+                back.style.color = "hsl("+(hue*360)+", 100%, 50%)";
+            }, 100);
+        }
+
+    </script>
+    <body>
+        <div class="holder">
+            <a style="color: white; font-size: 4vw; text-decoration: none;" href="./index">Abdullah Alsalman</a>
+            <div class="releaser">
+                <div style="display: grid; grid-template-rows: 2fr 1fr">
+                    <div class="card" style="height: 40vw;">
+                        <img src="./img/convo.png" style="transform:translate(0, -7vw); " width="100%">
+                    </div>
+                    <div></div>
+                </div>
+                <div style="display: grid; grid-template-rows: 1fr 2fr">
+                    <div></div>
+                    <div class="card">
+                        <div class="text">
+                            You might be wondering how I
+                            ended up in this situtation...<br><br>
+
+                            Hello! I'm <span style="color:royalblue;">Abdullah Alsalman</span>!<br><br>
+                            
+                            I'm a Game Programmer, Comic Artist,
+                            STEM Student, and Origamist from <span style="color: lime">Saudi Arabia</span>.<br><br>
+                            
+                            This school year, I went on a journey
+                            to <a style="color:magenta">UPenn</a> as part of <a style="color: aqua">KGSP</a>'s
+                            Foundation Year Cohort 16.<br><br>
+                            
+                            My quest is to prepare for 4 more
+                            years abroad and gain an eduaction.<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="releaser" style="grid-template-columns: 1fr 1fr 1fr 1fr 1fr;">
+                <div></div>
+                <div></div>
+                <div class="text">
+                    <a id="back" href="./index">INDEX!</a>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </body>
+</html>
