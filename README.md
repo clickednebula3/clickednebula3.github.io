@@ -3,13 +3,11 @@ Welcome to the Nebsite! I hope it can excite.
 
 ! work in progress...
 
-## Link to [Foundation Year](/fy/index.html)
-## NebNeb Minecraft Server
-## Nebby Devlog 2024
+### Link to [Foundation Year](/fy/index.html) (Sept 2025 - May 2026)
+### NebNeb Minecraft Server (October 2019 - Ongoing) (currently down...)
+### Nebby Devlog (April 2023 - December 2023)
 
-
-## Linktree (soon?)
-### Discord Server
-### Instagram
-### Youtube
-### Webtoons
+### Dev Discord Server
+### [Instagram](https://instagram.com/nebulial)
+### [Youtube](https://www.youtube.com/@clickednebula3)
+### [Webtoons](https://www.webtoons.com/p/community/en/u/nebby)
