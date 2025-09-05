@@ -5,28 +5,16 @@ Welcome to the Nebsite! I hope it can excite.
 
 # Projects
 
-### Link to [Foundation Year](/fy/index.html)
-**(Sept 2025 - May 2026)**
+### [Foundation Year Recap](/fy/index.html)             **(Sept 2025 - May 2026)**
 > GameMaker - UPenn ELP - KAUST KGSP - HTML Website
 
-### NebNeb Minecraft Server
-**(October 2019 - Ongoing)**
+### [NebNeb Minecraft Server](http://nebneb.ddns.net)   **(October 2019 - Ongoing)**
 > Minecraft - Server Hosting - Java Plugin Development - HTML Website
-> [link here soon]
 
-### Nebby Devlog
-**(April 2023 - December 2023)**
+### [Nebby Devlog](http://nebneb.ddns.net)              **(April 2023 - December 2023)**
 > GameMaker - HTML Website - WampServer
-> [link here soon]
 
-### Dev Discord Server
-> [link here soon]
+### [Dev Discord](https://discord.gg/UrGjwzAnwp)
+> Quickest mini updates and announcements for projects
 
-### [Webtoons](https://www.webtoons.com/p/community/en/u/nebby)
-> Drop Webcomic
-
-### [Instagram](https://instagram.com/nebulial)
-> Also Drop Webcomic (but Squares)
-
-### [Youtube](https://www.youtube.com/@clickednebula3)
-> Hastely uploadnig my experiments in video editing or programming
+### [Webtoons](https://www.webtoons.com/p/community/en/u/nebby) - [Instagram](https://instagram.com/nebulial) - [Youtube](https://www.youtube.com/@clickednebula3)
