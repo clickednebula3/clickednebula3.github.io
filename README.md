@@ -18,3 +18,4 @@ Welcome to the Nebsite! I hope it can excite.
 > Quickest mini updates and announcements for projects
 
 ### [Webtoons](https://www.webtoons.com/p/community/en/u/nebby) - [Instagram](https://instagram.com/nebulial) - [Youtube](https://www.youtube.com/@clickednebula3)
+![NebDrop Icon](https://file.garden/ZhWcmE16UCOclqdO/NebDrop/icon_b)
