@@ -1,7 +1,8 @@
 # clickednebula3.github.io
 Welcome to the Nebsite! I hope it can excite.
 
-**!** work in progress...
+**!** This portfolio is a work in progress...
+Please refer to the [*Resume*](https://docs.google.com/document/d/e/2PACX-1vRubjUKHF1kmC0CcqS5TyNyTwDDWS-icWtwc-940ZzOLjLXJtzHNn22NBOIyu9bsjl8dfQCBl71IRUN/pub)
 
 # Projects
 
