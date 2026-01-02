@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(14,14,14);
+    color: rgb(222, 222, 222);
+}
+
+.main {
+    border: solid 2px #e93b3b;
+    border-radius: 25px;
+    padding: 20px;
+    transition: box-shadow 100ms;
+    background: url(https://grainy-gradients.vercel.app/noise.svg);
+    /* background-color: #1e1e1e76; */
+}
+
+.main:hover {
+    box-shadow: 0px 0px 5px #e93b3b inset, 0px 0px 5px black;
+    /* border: solid 2px #e95959; */
+}
+
+
+.topbar {
+    height: 100px;
+}
+
+.topbaricon {
+    background: none;
+}
