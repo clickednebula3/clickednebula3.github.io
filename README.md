@@ -3,9 +3,6 @@ Welcome to the Nebsite! I hope it can excite.
 
 # Projects
 
-### [Foundation Year Recap](/fy/index.html)             **(Sept 2025 - May 2026)**
-> GameMaker - UPenn ELP - KAUST KGSP - HTML Website
-
 ### [NebNeb Minecraft Server](http://nebneb.ddns.net)   **(October 2019 - Ongoing)**
 > Minecraft - Server Hosting - Java Plugin Development - HTML Website
 
@@ -16,4 +13,6 @@ Welcome to the Nebsite! I hope it can excite.
 > Quickest mini updates and announcements for projects
 
 ### [Webtoons](https://www.webtoons.com/p/community/en/u/nebby) - [Instagram](https://instagram.com/nebulial) - [Youtube](https://www.youtube.com/@clickednebula3)
+> Comics of the web veriety
+
 ![NebDrop Icon](https://file.garden/ZhWcmE16UCOclqdO/NebDrop/icon_b)

@@ -7,16 +7,27 @@ body {
     border: solid 2px #e93b3b;
     border-radius: 25px;
     padding: 20px;
-    transition: box-shadow 100ms;
-    background: url(https://grainy-gradients.vercel.app/noise.svg);
-    /* background-color: #1e1e1e76; */
+    transition: box-shadow 100ms, translate 200ms;
+    /* background: url(https://grainy-gradients.vercel.app/noise.svg); */
+    background-color: #1e1e1e76;
+    width: fit-content;
+    translate: 50%;
+}
+
+.scroller {
+   overflow-x: hidden;
+   position: absolute;/*???*/
+   position: relative;/*???*/
+   display: grid;
+   grid-template-rows: 1fr2;
+   left:0;
 }
 
 .main:hover {
     box-shadow: 0px 0px 5px #e93b3b inset, 0px 0px 5px black;
+    /* translate: 20px 200px; */
     /* border: solid 2px #e95959; */
 }
-
 
 .topbar {
     height: 100px;
